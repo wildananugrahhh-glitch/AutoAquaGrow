@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoAquaGrow | Smart Irrigation, Sustainable Water</title>
+<meta name="description" content="AutoAquaGrow turns air-conditioner condensation into an intelligent water source that irrigates plants automatically.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23197A50'/%3E%3Cpath d='M16 6c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z' fill='%23F3F5EA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" role="status"><svg viewBox="0 0 32 40" aria-hidden="true"><path d="M16 2c8 10 12 16 12 22a12 12 0 0 1-24 0C4 18 8 12 16 2z" fill="#A8C9A5"/></svg>AutoAquaGrow</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="pl" viewBox="0 0 120 170"><path d="M60 170C58 120 62 80 60 28" stroke="#123D2B" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M60 100C20 98 4 70 10 44C42 46 58 70 60 100z" fill="#197A50"/><path d="M60 78C96 76 116 52 112 24C80 26 62 50 60 78z" fill="#2E9A63"/><path d="M60 132C30 136 12 118 10 98C38 98 56 112 60 132z" fill="#A8C9A5"/><path d="M60 120C90 122 108 106 112 84C84 82 64 98 60 120z" fill="#1d8a58"/><path d="M60 34C48 20 50 6 62 0C72 12 72 24 60 34z" fill="#CDE8C5"/></symbol>
+<linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#7BE0A9"/><stop offset="1" stop-color="#F4B942"/></linearGradient></defs></svg>
+
+<header class="nav">
+<a class="wm" href="#top">AutoAquaGrow</a>
+<nav id="menu" aria-label="Main"><a href="#innovation">Innovation</a><a href="#system">How it works</a><a href="#monitor">Monitoring</a><a href="#analytics">Analytics</a><a href="#control">Control</a><a href="#calibration">Calibration</a><a href="#alerts">Alerts</a><a href="#about">About</a></nav>
+<span class="chip" id="modeChip">DEMO MODE</span>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
+
+<main>
+<section id="top" class="hero">
+<svg class="scene" viewBox="0 0 1440 800" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E3324"/><stop offset=".55" stop-color="#197A50"/><stop offset="1" stop-color="#A8C9A5"/></linearGradient><radialGradient id="sun"><stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#FFE9A8" stop-opacity="0"/></radialGradient></defs>
+<rect width="1440" height="800" fill="url(#sky)"/>
+<g data-d=".05"><circle cx="1330" cy="170" r="260" fill="url(#sun)"/><circle cx="1330" cy="170" r="54" fill="#FFF1C4"/></g>
+<g data-d=".09"><path d="M0 520C220 420 420 560 700 470S1200 430 1440 520V800H0z" fill="#3aa26c" opacity=".5"/></g>
+<g data-d=".14"><path d="M0 610C260 530 520 650 820 575S1230 545 1440 615V800H0z" fill="#197A50"/>
+<use href="#pl" x="880" y="470" width="90" height="128"/><use href="#pl" x="1010" y="500" width="70" height="100"/><use href="#pl" x="1230" y="480" width="100" height="142"/></g>
+<g data-d=".22"><g transform="translate(820 40)"><rect x="70" y="190" width="300" height="96" rx="20" fill="#F3F5EA"/><path d="M96 240h248M96 258h248" stroke="#A8C9A5" stroke-width="5" stroke-linecap="round"/><circle cx="330" cy="214" r="6" fill="#197A50"/>
+<path d="M170 296v70M232 296v50" stroke="#8fe3ff" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 18"><animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M130 380h150l-14 110h-122z" fill="#F3F5EA" opacity=".92"/><path d="M138 420h134l-8 68h-118z" fill="#4fc3e8" opacity=".85"/>
+<path d="M280 470C360 490 420 540 462 610" stroke="#F4B942" stroke-width="9" fill="none" stroke-linecap="round"/></g></g>
+<g data-d=".34"><path d="M0 700C300 640 560 740 860 680S1260 650 1440 700V800H0z" fill="#123D2B"/>
+<use href="#pl" x="560" y="560" width="120" height="170"/><use href="#pl" x="30" y="640" width="90" height="128"/><use href="#pl" x="1290" y="590" width="150" height="212"/></g>
+</svg>
+<div class="parts" id="parts" aria-hidden="true"></div>
+<div class="in" style="width:100%"><h1>AutoAquaGrow</h1>
+<p class="sub">Smart Irrigation, Sustainable Water.</p>
+<p class="lead">Transforming wasted air-conditioner condensation into an intelligent water source for healthier plants.</p>
+<a class="btn" href="#innovation">Explore</a></div>
+</section>
+
+<section id="innovation" class="sec dk"><div class="in">
+<h2 class="ctr">Water that was going to waste</h2><span class="mark"></span>
+<div class="deck" id="deck">
+<button class="pc on"><svg viewBox="0 0 120 150" aria-hidden="true"><path d="M60 6C90 44 104 70 104 94a44 44 0 0 1-88 0C16 70 30 44 60 6z" fill="#8fe3ff"/><path d="M42 98a20 20 0 0 0 18 20" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg><h3>An AC drips all day</h3><p>Condensation runs off the unit and down a drain. It is clean enough to water plants, and it is thrown away.</p></button>
+<button class="pc"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="44" y="6" width="32" height="120" rx="12" fill="#F3F5EA"/><rect x="52" y="30" width="16" height="70" rx="6" fill="#197A50"/><path d="M44 126l16 22 16-22z" fill="#F4B942"/></svg><h3>Plants need moisture, not a timer</h3><p>A capacitive sensor reads how wet the soil really is, so watering follows the plant instead of the clock.</p></button>
+<button class="pc"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="16" y="50" width="70" height="56" rx="14" fill="#F3F5EA"/><circle cx="51" cy="78" r="16" fill="#197A50"/><path d="M86 78h28" stroke="#8fe3ff" stroke-width="9" stroke-linecap="round"/></svg><h3>Watering that stops by itself</h3><p>When the soil is too dry the pump turns on. Once the target is reached, it turns off again.</p></button>
+</div>
+<div class="ctl"><button class="btn ghost" id="prev">Previous</button><button class="btn" id="next">Next</button></div>
+</div></section>
+
+<section id="system" class="sec light" style="background:var(--iv)"><div class="in">
+<div class="ctr"><h2>How the system works</h2><span class="mark"></span><p class="mut">Choose a step. The parts involved light up and the water or signal path moves.</p></div>
+<div class="steps" id="steps">
+<button class="st" data-s="1" aria-pressed="true">Collect</button><button class="st" data-s="2" aria-pressed="false">Store</button><button class="st" data-s="3" aria-pressed="false">Read soil</button><button class="st" data-s="4" aria-pressed="false">Decide</button><button class="st" data-s="5" aria-pressed="false">Pump on</button><button class="st" data-s="6" aria-pressed="false">Irrigate</button><button class="st" data-s="7" aria-pressed="false">Pump off</button><button class="st" id="play" aria-pressed="false">Play all</button></div>
+<div class="dwrap"><svg id="diag" viewBox="0 0 1000 520" role="img" aria-label="Diagram: AC condensation drips into a container, a 12V DC pump moves it through a hose to a plant, and an ESP32 reads a capacitive soil moisture sensor and switches the pump through a relay.">
+<g class="part" data-s="1"><rect x="40" y="20" width="220" height="70" rx="14" fill="#F3F5EA" stroke="#123D2B" stroke-width="3"/><path d="M62 62h176M62 76h176" stroke="#A8C9A5" stroke-width="5"/><text x="150" y="46" text-anchor="middle">AC unit</text><path class="flow" d="M130 92V280"/></g>
+<g class="part" data-s="2 1"><path d="M60 280h140l-12 130h-116z" fill="#fff" stroke="#123D2B" stroke-width="3"/><path d="M70 330h120l-8 74h-104z" fill="#4fc3e8" opacity=".8"/><text x="130" y="440" text-anchor="middle">Water container</text></g>
+<g class="part" data-s="2 5 6"><path class="flow" d="M200 345H300"/></g>
+<g class="part" data-s="5 6 7"><rect x="300" y="305" width="110" height="80" rx="16" fill="#197A50" stroke="#123D2B" stroke-width="3"/><circle cx="355" cy="345" r="20" fill="#F3F5EA"/><text x="355" y="410" text-anchor="middle">12V DC pump</text></g>
+<g class="part" data-s="6"><path class="flow" d="M410 345H700Q800 345 800 400"/><text x="560" y="332" text-anchor="middle">Irrigation hose</text></g>
+<g class="part" data-s="4 5 7"><rect x="300" y="100" width="110" height="60" rx="12" fill="#F4B942" stroke="#123D2B" stroke-width="3"/><text x="355" y="136" text-anchor="middle">Relay</text><path class="sig" d="M355 160V305"/></g>
+<g class="part" data-s="3 4 5 7"><rect x="480" y="70" width="180" height="130" rx="16" fill="#123D2B"/><rect x="500" y="90" width="60" height="40" rx="6" fill="#A8C9A5"/><text x="570" y="165" text-anchor="middle" style="fill:#F3F5EA">ESP32 DevKit V1</text><text x="570" y="186" text-anchor="middle" style="fill:#A8C9A5;font-size:12px">Wi-Fi to Firebase later</text><path class="sig" d="M480 130H410"/></g>
+<g class="part" data-s="3"><path class="sig" d="M775 400V150H660"/><text x="720" y="136" text-anchor="middle">Sensor on GPIO34</text></g>
+<g class="part" data-s="3 6"><path d="M740 400h140l-10 90H750z" fill="#C98F5A" stroke="#123D2B" stroke-width="3"/><path d="M742 420h136l-6 12H748z" fill="#5a3b24"/><rect x="767" y="380" width="16" height="70" rx="6" fill="#F3F5EA" stroke="#123D2B" stroke-width="2"/><use href="#pl" x="800" y="260" width="80" height="120"/><text x="810" y="512" text-anchor="middle">Plant and capacitive sensor</text></g>
+</svg></div>
+<p class="note hint">Swipe sideways to see the whole diagram.</p>
+<p class="cap" id="cap" aria-live="polite"></p>
+</div></section>
+
+<section id="monitor" class="sec dk"><div class="in">
+<h2>Live monitoring</h2>
+<div class="banner" id="banner"><p id="modeNote"></p><div class="seg" id="scen" role="group" aria-label="Demo scenario"><button data-sc="dry" aria-pressed="false">Dry</button><button data-sc="moderate" aria-pressed="true">Moderate</button><button data-sc="moist" aria-pressed="false">Moist</button><button data-sc="offline" aria-pressed="false">ESP32 offline</button></div></div>
+<div class="mon"><div>
+<svg class="gauge" viewBox="0 0 300 190" role="img" aria-label="Soil moisture gauge showing the raw ADC reading"><path class="gtrack" d="M30 150A120 120 0 0 1 270 150"/><path id="garc" class="gfill" d="M30 150A120 120 0 0 1 270 150" pathLength="100" stroke-dasharray="0 100"/><line id="tOn" stroke="#fff" stroke-width="4" visibility="hidden"/><line id="tOff" stroke="#fff" stroke-width="4" visibility="hidden"/><text id="gadc" x="150" y="128" text-anchor="middle" font-size="34" font-weight="700">-</text><text x="150" y="152" text-anchor="middle" font-size="11" style="font-family:Manrope,sans-serif;fill:#A8C9A5">Raw ADC reading, 0 to 4095</text></svg>
+<div style="display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;margin-top:8px"><span class="pill" id="cond">-</span><p class="big" id="pct">-</p></div>
+<p class="note" id="thr" style="margin-top:12px"></p></div>
+<div>
+<div style="display:flex;align-items:center;gap:20px" id="pumpWrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" fill="none" stroke="#ffffff22" stroke-width="9"/><circle class="sp" cx="50" cy="50" r="42" fill="none" stroke="#F4B942" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200"/><path d="M50 30c8 10 12 16 12 21a12 12 0 0 1-24 0c0-5 4-11 12-21z" fill="#8fe3ff"/></svg><div><p class="note" id="pumpLbl">Pump</p><p class="big" id="pumpTxt">-</p></div></div>
+<div class="rows"><div><span>Relay</span><b id="relay">-</b></div><div><span>Pump activations</span><b id="cnt">-</b></div><div><span>Total pump run time</span><b id="dur">-</b></div>
+<div><span>ESP32</span><b id="hESP">-</b></div><div><span>Wi-Fi</span><b id="hWifi">-</b></div><div><span>Soil sensor</span><b id="hSensor">-</b></div><div><span>Last data update</span><b id="hLast">-</b></div></div>
+<p class="warn" id="stale" hidden></p></div></div>
+</div></section>
+
+<section id="analytics" class="sec light"><div class="in">
+<h2>Smart analytics</h2><p class="mut" style="margin-top:10px" id="anNote"></p>
+<div class="tab"><div class="seg" id="range" role="group" aria-label="Date range"><button data-r="daily" aria-pressed="true">Daily, last 24 h</button><button data-r="weekly" aria-pressed="false">Weekly, last 7 days</button></div><p id="chartRead" class="note" aria-live="polite">Move over the chart to read a point.</p></div>
+<svg id="chart" viewBox="0 0 640 300" role="img" aria-label="Soil moisture history chart, raw ADC readings"></svg>
+<div class="kpis"><div><span class="mut">Pump activations</span><b id="kRuns">-</b></div><div><span class="mut">Total pump run time</span><b id="kDur">-</b></div><div><span class="mut">Estimated water used</span><b id="kWater">-</b><span class="note" id="waterNote"></span></div></div>
+</div></section>
+
+<section id="control" class="sec dk"><div class="in">
+<h2>Smart control and settings</h2>
+<div class="two"><div>
+<div class="fld"><label for="onR">Start the pump below: <b id="onV"></b>% moisture</label><input id="onR" type="range" min="5" max="70"></div>
+<div class="fld"><label for="offR">Stop the pump above: <b id="offV"></b>% moisture</label><input id="offR" type="range" min="20" max="95"></div>
+<div class="fld"><label for="toR">Pump safety timeout: <b id="toV"></b> s per run</label><input id="toR" type="range" min="10" max="300" step="5"></div>
+<p class="err" id="cfgErr" role="alert"></p>
+<button class="btn" id="saveCfg">Save settings</button><p class="note" id="cfgNote" style="margin-top:12px"></p></div>
+<div><div class="rows"><div><span>Controller</span><b>ESP32 DevKit V1</b></div><div><span>Soil sensor</span><b>Capacitive, GPIO34</b></div><div><span>Actuator</span><b>DC 12V pump via relay</b></div><div><span>Database</span><b>Firebase Realtime Database</b></div><div><span>Thresholds apply</span><b>Only after calibration</b></div></div>
+<p class="note" style="margin:18px 0">Safeguards: the pump stops at the timeout even if the soil still reads dry, and readings stuck at 0 or 4095 are flagged as abnormal instead of triggering watering.</p>
+<button class="btn ghost" id="testBtn">Run pump test</button><p class="note" id="testNote" style="margin-top:12px"></p></div></div>
+</div></section>
+
+<section id="calibration" class="sec light" style="background:var(--iv)"><div class="in">
+<h2>Sensor calibration</h2>
+<div class="two"><div>
+<p class="mut">A capacitive sensor reports a raw number, and higher usually means drier. Enter the reading in dry soil and the reading in soaked soil from your own sensor. Moisture percent is calculated between those two points.</p>
+<div class="fld"><label for="dry">Dry-soil ADC value</label><input id="dry" type="number" min="0" max="4095" inputmode="numeric" placeholder="Not set"></div>
+<div class="fld"><label for="wet">Wet-soil ADC value</label><input id="wet" type="number" min="0" max="4095" inputmode="numeric" placeholder="Not set"></div>
+<div class="fld"><label for="flow">Measured pump flow rate, liters per minute (optional)</label><input id="flow" type="number" min="0" step="0.01" placeholder="Not set"></div>
+<p class="err" id="calErr" role="alert"></p>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><button class="btn" id="useDry" disabled>Use current as dry</button><button class="btn ghost" id="useWet" disabled>Use current as wet</button></div><p class="note" id="calNote" style="margin-top:12px"></p></div>
+<div><div class="rows"><div><span>Current raw ADC</span><b id="rawNow">-</b></div><div><span>Calculated moisture</span><b id="pctNow">-</b></div></div>
+<div class="track" aria-hidden="true"><i id="mk" style="left:50%"></i></div><div style="display:flex;justify-content:space-between;font-weight:700"><span>Wet point</span><span>Dry point</span></div>
+<p class="note" style="margin-top:14px">Change either point and the percentage moves, while the raw reading stays the same. Without both points the site shows no percentage.</p></div></div>
+</div></section>
+
+<section id="alerts" class="sec dk"><div class="in">
+<h2>Notifications and activity</h2>
+<div class="al"><div><h3 style="font-size:20px;margin-bottom:10px">Right now</h3><ul class="nl" id="notes"></ul></div>
+<div><h3 style="font-size:20px;margin-bottom:18px">Activity timeline</h3><ol class="tl" id="tl"></ol></div></div>
+</div></section>
+
+<section id="about" class="sec about"><div class="in ab">
+<svg viewBox="0 0 420 380" role="img" aria-label="Botanical illustration of plants growing from a water drop" style="width:100%"><path d="M210 20C300 130 340 200 340 250a130 130 0 0 1-260 0C80 200 120 130 210 20z" fill="#197A50" opacity=".16"/><use href="#pl" x="70" y="160" width="130" height="184"/><use href="#pl" x="170" y="90" width="170" height="240"/><use href="#pl" x="300" y="190" width="100" height="142"/></svg>
+<div><h2>Why AutoAquaGrow</h2>
+<ul><li>Reusing AC condensation<span>Water that would drain away becomes irrigation.</span></li><li>Automating plant irrigation<span>The ESP32 decides, the relay and pump act.</span></li><li>Monitoring soil moisture<span>A capacitive sensor reads the soil all the time.</span></li><li>Less manual watering<span>Nobody has to remember the watering round.</span></li><li>More efficient water management<span>Water goes where and when the soil needs it.</span></li></ul></div>
+</div></section>
+</main>
+
+<footer class="ft"><div class="in"><div><p class="wm" style="font-size:22px">AutoAquaGrow</p><p class="note" style="margin:12px 0;max-width:46ch">An ESP32 based irrigation innovation that reuses air-conditioner condensation water and waters plants according to soil moisture.</p><p style="font:700 16px 'Unbounded',sans-serif">Smart Irrigation, Sustainable Water.</p></div>
+<div><a href="#innovation">Innovation</a><a href="#system">How it works</a><a href="#monitor">Monitoring</a><a href="#analytics">Analytics</a><a href="#control">Control</a><a href="#about">About</a><p class="note" style="margin-top:16px">&copy; <span id="yr">2026</span> AutoAquaGrow. All rights reserved.</p></div></div></footer>
+
+<dialog id="dlg"><h3 style="font-size:20px">Run a pump test?</h3><p style="margin:12px 0 22px">The pump will run for <b id="dlgS"></b> seconds and then stop by itself.</p><div style="display:flex;gap:10px;justify-content:flex-end"><button class="btn ghost" id="dlgNo">Cancel</button><button class="btn" id="dlgOk">Run test</button></div></dialog>
+<script src="script.js" defer></script>
+</body>
+</html>
